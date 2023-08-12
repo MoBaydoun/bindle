@@ -1,9 +1,10 @@
 {
-  "name": "@bindle/bundler",
+  "name": "@clump/bundler",
   "version": "0.0.1",
-  "description": "Bundle JavaScript/TypeScript files with bindle.",
+  "description": "Bundle JavaScript/TypeScript files with clump.",
   "type": "module",
   "license": "MIT",
+  "private": false,
   "repository": {
     "type": "git",
     "directory": "https://github.com/MoBaydoun/bindle.git",
@@ -11,7 +12,7 @@
   },
   "exports": "./dist/index.js",
   "bin": {
-    "bindle": "./dist/index.js"
+    "clump": "./dist/index.js"
   },
   "engines": {
     "node": ">=18.0.0"
