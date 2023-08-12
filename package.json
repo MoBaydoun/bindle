@@ -1,5 +1,5 @@
 {
-  "name": "@bindle/root",
+  "name": "@clump/root",
   "version": "0.0.0",
   "description": "A bundler that may or may not be okay.",
   "author": "Mo Baydoun <bydn.mo@gmail.com>",
@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "directory": "https://github.com/MoBaydoun/bindle.git"
+    "directory": "https://github.com/MoBaydoun/clump.git"
   },
   "engines": {
     "node": ">=18.0.0"
