@@ -1,0 +1,13 @@
+{
+  "name": "@bindle/root",
+  "version": "0.0.0",
+  "description": "A bundler that may or may not be okay.",
+  "author": "Mo Baydoun <bydn.mo@gmail.com>",
+  "type": "module",
+  "license": "MIT",
+  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": []
+}
