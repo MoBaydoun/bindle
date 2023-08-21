@@ -10,7 +10,7 @@
     "directory": "https://github.com/MoBaydoun/clump.git"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=18.0"
   },
   "scripts": {
     "typecheck": "turbo typecheck",
@@ -18,12 +18,13 @@
     "build": "turbo build",
     "start:bundler": "turbo --filter=bundler start",
     "dev:bundler": "turbo --filter=bundler dev",
-    "clean": "turbo clean && rm -rf node_modules",
+    "clean": "turbo clean && rm -rf node_modules && rm -rf test_env",
     "lint": "turbo lint && manypkg check",
     "lint:fix": "turbo lint:fix && manypkg fix",
     "format": "turbo format && prettier --write '*.{cjs,json}' --ignore-unknown --no-error-on-unmatched-pattern",
     "format:check": "turbo format:check && prettier --check '*.{cjs,json}' --ignore-unknown --no-error-on-unmatched-pattern",
-    "check": "turbo lint typecheck format:check && manypkg check"
+    "check": "turbo lint typecheck format:check && manypkg check",
+    "test_proj": "pnpm build && cd bundler && npm link && cd .. && mkdir test_env && cd test_env && npm init -y && npm link @clump/bundler && npx clump"
   },
   "dependencies": {
     "@manypkg/cli": "^0.21.0",

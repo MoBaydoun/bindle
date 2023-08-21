@@ -10,5 +10,5 @@ export default defineConfig({
   sourcemap: true,
   target: "esnext",
   outDir: "dist",
-  onSuccess: "node dist/index.js"
+  onSuccess: "node dist/index.js",
 });
